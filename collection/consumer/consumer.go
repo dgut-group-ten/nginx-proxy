@@ -114,7 +114,10 @@ func LogConsumer(params meta.CmdParams, logChannel chan string, pvChannel, uvCha
 		}
 		pvChannel <- uData
 		uvChannel <- uData
-		clickChannel <- uData
+
+		if data.Status == "200" && urlId != "list" {
+			clickChannel <- uData
+		}
 	}
 }
 
