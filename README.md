@@ -26,6 +26,13 @@ git fetch upstream
 git merge upstream/master
 ```
 
+## redis操作
+
+redis 删除数据库
+```shell script
+flushdb
+```
+
 ## 参考资料
 
 - [Convert a float64 to an int in Go](https://stackoverflow.com/questions/8022389/convert-a-float64-to-an-int-in-go/8022789)
